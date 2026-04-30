@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>♟ Pawns Hub PRO</title>
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Arial, sans-serif;
+    }
+
+    body{
+      display:flex;
+      min-height:100vh;
+      background: radial-gradient(circle at top, #1a1a1a, #0b0b0b);
+      color:white;
+    }
+
+    /* SIDEBAR */
+    .sidebar{
+      width:280px;
+      background:#0f0f0f;
+      border-right:2px solid #d4af37;
+      padding:20px;
+      display:flex;
+      flex-direction:column;
+      gap:12px;
+    }
+
+    .logo{
+      text-align:center;
+      font-size:24px;
+      font-weight:bold;
+      color:#d4af37;
+      margin-bottom:10px;
+    }
+
+    .tag{
+      text-align:center;
+      font-size:12px;
+      color:#aaa;
+      margin-bottom:20px;
+    }
+
+    .menu a{
+      display:flex;
+      align-items:center;
+      gap:10px;
+      padding:12px;
+      background:#1a1a1a;
+      border-radius:12px;
+      text-decoration:none;
+      color:white;
+      transition:0.25s;
+      border:1px solid #222;
+    }
+
+    .menu a:hover{
+      background:#d4af37;
+      color:black;
+      transform:translateX(6px);
+    }
+
+    /* MAIN */
+    .main{
+      flex:1;
+      padding:30px;
+    }
+
+    .header{
+      font-size:28px;
+      font-weight:bold;
+      margin-bottom:10px;
+    }
+
+    .sub{
+      color:#aaa;
+      margin-bottom:25px;
+    }
+
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit, minmax(220px,1fr));
+      gap:15px;
+    }
+
+    .card{
+      background:#151515;
+      border:1px solid #2a2a2a;
+      padding:18px;
+      border-radius:14px;
+      transition:0.3s;
+    }
+
+    .card:hover{
+      transform:translateY(-5px);
+      border-color:#d4af37;
+    }
+
+    .card h3{
+      color:#d4af37;
+      margin-bottom:8px;
+    }
+
+    .card a{
+      color:#ccc;
+      font-size:13px;
+      text-decoration:none;
+    }
+
+    .card a:hover{
+      color:white;
+    }
+
+    @media(max-width:800px){
+      body{flex-direction:column;}
+      .sidebar{width:100%; flex-direction:row; overflow-x:auto;}
+      .menu a{min-width:160px;}
+    }
+  </style>
+</head>
+<body>
+
+  <div class="sidebar">
+    <div class="logo">♟ Pawns Hub PRO</div>
+    <div class="tag">Chess Club Control Center</div>
+
+    <div class="menu">
+      <a href="https://www.chess.com/club/pawns-spanish" target="_blank">🏠 Inicio</a>
+      <a href="https://www.chess.com/clubs/forum/pawns-spanish" target="_blank">💬 Foros</a>
+      <a href="https://www.chess.com/club/pawns-spanish/announcements" target="_blank">📢 Anuncios</a>
+      <a href="https://www.chess.com/clubs/events/pawns-spanish" target="_blank">🏆 Torneos</a>
+      <a href="https://www.chess.com/leaderboard/daily?group=845955" target="_blank">📊 Rangos</a>
+    </div>
+  </div>
+
+  <div class="main">
+    <div class="header">Bienvenido al Pawns Hub PRO</div>
+    <div class="sub">Centro de control oficial del club Pawns Spanish</div>
+
+    <div class="grid">
+
+      <div class="card">
+        <h3>🏠 Inicio</h3>
+        <a href="https://www.chess.com/club/pawns-spanish" target="_blank">Entrar al club</a>
+      </div>
+
+      <div class="card">
+        <h3>💬 Foros</h3>
+        <a href="https://www.chess.com/clubs/forum/pawns-spanish" target="_blank">Ver discusiones</a>
+      </div>
+
+      <div class="card">
+        <h3>📢 Anuncios</h3>
+        <a href="https://www.chess.com/club/pawns-spanish/announcements" target="_blank">Últimas noticias</a>
+      </div>
+
+      <div class="card">
+        <h3>🏆 Torneos</h3>
+        <a href="https://www.chess.com/clubs/events/pawns-spanish" target="_blank">Eventos activos</a>
+      </div>
+
+      <div class="card">
+        <h3>📊 Rangos</h3>
+        <a href="https://www.chess.com/leaderboard/daily?group=845955" target="_blank">Ver ranking</a>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>
